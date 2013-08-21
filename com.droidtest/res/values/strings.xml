@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Input activity -->
+    <string name="app_name">droidtest</string>
+    <string name="title_activity_input">Заполните резюме</string>
+    <string name="menu_settings">Settings</string>
+    <string name="tvwName">ФИО : </string>
+    <string name="btnBirthDate">Выберите дату рождения</string>
+    <string name="tvwSex">Пол : </string>
+    <string name="tvwPosition">Должность : </string>
+    <string name="tvwSalary">Зарплата : </string>
+    <string name="tvwPhone">Телефон : </string>
+    <string name="tvwEmail">E-mail : </string>
+    <string name="btnSend">Отправить резюме</string>
+    <string name="defSex">Не знаю</string>
+    <string name="dlgTitle">Отзыв работодателя</string>
+    
+    <string-array name="sex">
+		<item>Не знаю</item>
+		<item>Мужской</item>
+		<item>Женский</item>
+	</string-array>
+
+    <!-- Reciever activity -->
+    <string name="title_activity_reciever">Резюме соискателя</string>
+    <string name="tvwBirthDate">Дата рождения : </string>
+    <string name="btnSendBack">Отправить ответ</string>
+    <string name="tvwPresentData">Данные соискателя</string>
+    <string name="tvwLetter">Письмо соискателю</string>
+    
+</resources>

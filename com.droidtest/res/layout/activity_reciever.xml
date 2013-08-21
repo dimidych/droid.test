@@ -1,0 +1,234 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/linearLayout1"
+    tools:context=".RecieverActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/notepad_paper"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvwPresentData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="@string/tvwPresentData" />
+
+                <!-- name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                
+                <TextView
+                    android:id="@+id/tvwName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="@string/tvwName"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+			                    android:id="@+id/tvwNameVal"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_margin="2dp"
+			                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+                
+                <!-- birthdate -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                
+                <TextView
+                    android:id="@+id/tvwBirthDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="@string/tvwBirthDate"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<TextView
+			                    android:id="@+id/tvwBirthDateVal"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_margin="2dp"
+			                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+                
+                <!-- sex -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+               
+                    <TextView
+	                    android:id="@+id/tvwSex"
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_margin="2dp"
+	                    android:text="@string/tvwSex"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                 <TextView
+			                    android:id="@+id/tvwSexVal"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_margin="2dp"
+			                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+                
+                <!-- position -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+	               
+                    <TextView
+	                    android:id="@+id/tvwPosition"
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_margin="2dp"
+	                    android:text="@string/tvwPosition"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                <TextView
+		                    android:id="@+id/tvwPositionVal"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_margin="2dp"
+		                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+                
+                <!-- salary -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+	                
+	                <TextView
+	                    android:id="@+id/tvwSalary"
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_margin="2dp"
+	                    android:text="@string/tvwSalary"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <TextView
+	                    android:id="@+id/tvwSalaryVal"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_margin="2dp"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+                
+                <!-- phone -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvwPhone"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/tvwPhone"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tvwPhoneAction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="tvwPhoneAction_onClick"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/linked_text" />
+                </LinearLayout>
+
+                <!-- e-mail -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvwEmail"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/tvwEmail"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tvwEmailAction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="tvwEmailAction_onClick"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/linked_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvwLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/tvwLetter" />
+
+            <EditText
+                android:id="@+id/edtBackLetter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="36.40"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:singleLine="false" >
+
+                <requestFocus />
+            </EditText>
+            
+            <Button
+	            android:id="@+id/btnSendBack"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="2dp"
+	            android:layout_weight="0.76"
+	            android:onClick="btnSendBack_onClick"
+	            android:text="@string/btnSendBack" />
+        </LinearLayout>
+
+</ScrollView>
